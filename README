@@ -1,0 +1,73 @@
+# AI-Final-Project
+
+<img src="" width="100%" height="auto">
+
+## Author List :black_nib:
+Micah Thompson 
+* LinkedIn: https://www.linkedin.com/in/micah-thompson-/
+* Github: https://github.com/MThompson384
+
+William Olichney
+* LinkedIn: https://www.linkedin.com/in/william-olichney/
+* Github: https://github.com/wkolichney
+  
+Precious Ndunduri
+* LinkedIn: https://www.linkedin.com/in/precious-ndunduri/
+* Github: https://github.com/Preci8ous
+  
+Luke White
+* LinkedIn: https://www.linkedin.com/in/luke-white-7915701b6/
+* Github: https://github.com/lwhite01?tab=repositories
+
+## Project Scope :bookmark_tabs:
+This project focuses on the implementation of artificial intelligence (AI) within Bearing, a company dedicated to optimizing maritime shipping operations. The scope will encompass the following:
+
+### Objective: 
+To explore how advanced deep learning techniques can be utilized to significantly reduce fuel consumption, enhance market opportunities, and improve overall fleet management for maritime shipping companies.
+
+### Key Areas of Focus:
+
+* Fuel Efficiency: Analyze and implement AI models that predict fuel consumption patterns and identify strategies for reduction.
+* Market Analysis Optimization: Utilize AI to assess market conditions and help shipping companies make informed decisions regarding routing and cargo.
+* Fleet Management Improvement: Enhance operational efficiency through predictive maintenance and real-time monitoring of fleet performance using AI technologies.
+* Partnerships: Bearing has established collaborations with some of the largest shipping companies to field-test its AI technology on vessels globally, ensuring practical insights and adjustments based on real-world data.
+
+### Expected Outcomes: 
+
+Development of robust AI-driven tools that lead to decreased operational costs and increased profit margins for shipping companies.
+Realization of an enhanced decision-making framework that leverages data analytics to seize market opportunities promptly.
+Through the exploration of these aspects, this project aims to contribute valuable insights into the effective use of AI in the maritime industry, helping Bearing reaffirm its position as an innovator in shipping technology.
+
+## Project Details :computer:
+### Project Description: 
+This project involves developing a comprehensive website for Bearing.ai, aimed at enhancing customer engagement and providing valuable insights into the maritime supply chain. The website will serve as a hub for information about Bearing’s innovative AI solutions and their impact on optimizing shipping operations.
+
+### Key Features:
+
+* Homepage: An inviting main page that conveys Bearing’s mission, vision, and the benefits of AI in maritime operations.
+* Demo Section: A user-friendly interactive demo that assists potential customers in exploring various marine supply chain options. This will allow users to simulate decision-making processes and visualize the benefits of utilizing Bearing’s AI technologies.
+* Solutions Overview: Detailed descriptions of the solutions provided by Bearing, including fuel efficiency strategies, market analysis tools, and fleet management insights.
+* Case Studies: Real-world examples showcasing successful implementations of Bearing’s technology, emphasizing partnerships with leading shipping companies.
+
+### Installation Instructions: 
+
+1. Clone the repository from GitHub.
+2. Navigate to the project directory and run the command to install dependencies.
+3. Set up the database and configure environment variables.
+4. Use the specified command to start the development server and view the website locally.
+5. Usage: Users can navigate through the website to access information on services, request demos, and contact Bearing for further inquiries. The demo feature will allow users to interactively learn about supply chain optimization options based on their unique needs.
+
+## What's Next :round_pushpin:
+In the coming phases of the project, we will discuss any future plans, milestones, or upcoming features that are being considered. Feedback and contributions are welcomed as we move forward.
+
+## Responsible AI :lock_with_ink_pen:
+This project strives to implement responsible AI practices, which include:
+
+Ensuring fairness and reducing bias in AI model training.
+Maintaining transparency and accountability in the decision-making processes.
+Prioritizing user privacy and data security throughout the project lifecycle.
+
+Reference Links
+GitHub Repository
+Project Documentation
+Research Paper or Article
