@@ -1,0 +1,25 @@
+function doGet() {
+  return HtmlService.createHtmlOutputFromFile('Index')
+    .setTitle('Sea Carbon - Ship Emissions Calculator')
+    .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+}
+
+// Function to calculate emissions (can be called from client-side)
+function calculateEmissions(speed, weight, fuelType) {
+  // Simplified model prediction based on the TensorFlow model
+  // These values approximate the model you trained
+  
+  // Basic calculation
+  let emission = 0.2 * speed + 0.0005 * weight;
+  
+  // Adjust based on fuel type (diesel emits more)
+  if (fuelType === 0) {
+    emission *= 1.5; // Diesel penalty
+  }
+  
+  // Add base value
+  emission += 10;
+  
+  // Round to 2 decimal places
+  return Math.round(emission * 100) / 100;
+}
