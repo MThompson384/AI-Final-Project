@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base target="_top">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sea Carbon - Ship Emissions Calculator</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f0f8ff;
+      color: #2c3e50;
+    }
+    .container {
+      background-color: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #2980b9;
+      text-align: center;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 25px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #34495e;
+    }
+    input, select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #bdc3c7;
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    input:focus, select:focus {
+      border-color: #3498db;
+      outline: none;
+      box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    }
+    button {
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      padding: 14px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #3498db;
+    }
+    #loading {
+      display: none;
+      text-align: center;
+      margin: 20px 0;
+    }
+    .spinner {
+      border: 4px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      border-top: 4px solid #3498db;
+      width: 30px;
+      height: 30px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .result {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #edf7ff;
+      border-radius: 5px;
+      border-left: 5px solid #3498db;
+      display: none;
+    }
+    .result h2 {
+      margin-top: 0;
+      color: #2980b9;
+    }
+    .result-value {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2c3e50;
+      margin: 15px 0;
+    }
+    .footnote {
+      font-size: 12px;
+      color: #7f8c8d;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .tips {
+      margin-top: 25px;
+      background-color: #e8f8f5;
+      padding: 15px;
+      border-radius: 5px;
+      border-left: 5px solid #27ae60;
+    }
+    .tips h3 {
+      color: #27ae60;
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <!-- Simple ship logo using text -->
+      <div style="font-size: 48px; color: #3498db;">⚓</div>
+      <div style="font-weight: bold; color: #2980b9;">SEA CARBON</div>
+    </div>
+    
+    <h1>Ship Emissions Calculator</h1>
+    
+    <div class="form-group">
+      <label for="speed">Ship Speed (knots):</label>
+      <input type="number" id="speed" min="5" max="35" step="0.5" value="18" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="weight">Cargo Weight (tons):</label>
+      <input type="number" id="weight" min="1000" max="50000" step="100" value="12000" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="fuel">Fuel Type:</label>
+      <select id="fuel" required>
+        <option value="0">Diesel</option>
+        <option value="1" selected>LNG (Liquefied Natural Gas)</option>
+      </select>
+    </div>
+    
+    <button id="calculate">Calculate Emissions</button>
+    
+    <div id="loading">
+      <div class="spinner"></div>
+      <p>Calculating...</p>
+    </div>
+    
+    <div class="result" id="result">
+      <h2>Estimated Carbon Emissions</h2>
+      <div class="result-value"><span id="emission-value">0</span> metric tons of CO₂</div>
+      <div id="comparison"></div>
+    </div>
+    
+    <div class="tips">
+      <h3>Carbon Reduction Tips</h3>
+      <ul>
+        <li>Reducing speed by 10% can lower emissions by up to 30%</li>
+        <li>Regular hull cleaning can improve fuel efficiency by 5-10%</li>
+        <li>Consider switching to cleaner fuels like LNG or biofuels</li>
+        <li>Optimize routes to minimize distance and avoid adverse weather</li>
+      </ul>
+    </div>
+    
+    <p class="footnote">This calculator uses an AI model trained on shipping data to estimate carbon emissions. Results are approximate and may vary based on specific vessel characteristics, weather conditions, and other factors.</p>
+  </div>
+
+  <script>
+    document.getElementById('calculate').addEventListener('click', function() {
+      // Get input values
+      const speed = parseFloat(document.getElementById('speed').value);
+      const weight = parseFloat(document.getElementById('weight').value);
+      const fuelType = parseInt(document.getElementById('fuel').value);
+      
+      // Input validation
+      if (isNaN(speed) || isNaN(weight)) {
+        alert('Please enter valid numbers for speed and cargo weight.');
+        return;
+      }
+
+      // Show loading spinner
+      document.getElementById('loading').style.display = 'block';
+      document.getElementById('result').style.display = 'none';
+      
+      // Call the server-side function
+      google.script.run
+        .withSuccessHandler(function(emission) {
+          // Hide loading spinner
+          document.getElementById('loading').style.display = 'none';
+          
+          // Display result
+          document.getElementById('emission-value').textContent = emission.toFixed(2);
+          
+          // Show comparison
+          const comparisonText = getComparisonText(emission);
+          document.getElementById('comparison').innerHTML = comparisonText;
+          
+          // Show result div
+          document.getElementById('result').style.display = 'block';
+        })
+        .withFailureHandler(function(error) {
+          // Hide loading spinner
+          document.getElementById('loading').style.display = 'none';
+          alert('Error calculating emissions: ' + error);
+        })
+        .calculateEmissions(speed, weight, fuelType);
+    });
+    
+    function getComparisonText(emission) {
+      // Provide context for the emission value
+      if (emission < 15) {
+        return "<p>Your estimated emissions are <strong>low</strong> compared to industry average.</p>";
+      } else if (emission < 25) {
+        return "<p>Your estimated emissions are <strong>average</strong> for the shipping industry.</p>";
+      } else {
+        return "<p>Your estimated emissions are <strong>above average</strong>. Consider implementing some carbon reduction strategies.</p>";
+      }
+    }
+  </script>
+</body>
+</html>
