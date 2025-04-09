@@ -49,7 +49,7 @@ This project involves developing a comprehensive website for Bearing.ai, aimed a
 * Solutions Overview: Detailed descriptions of the solutions provided by Bearing, including fuel efficiency strategies, market analysis tools, and fleet management insights.
 * Case Studies: Real-world examples showcasing successful implementations of Bearing’s technology, emphasizing partnerships with leading shipping companies.
 
-### Installation Instructions: 
+### Installation Instructions: (might be removed)
 
 1. Clone the repository from GitHub.
 2. Navigate to the project directory and run the command to install dependencies.
@@ -57,10 +57,10 @@ This project involves developing a comprehensive website for Bearing.ai, aimed a
 4. Use the specified command to start the development server and view the website locally.
 5. Usage: Users can navigate through the website to access information on services, request demos, and contact Bearing for further inquiries. The demo feature will allow users to interactively learn about supply chain optimization options based on their unique needs.
 
-## What's Next :round_pushpin:
+## What's Next :round_pushpin: (needs to be updated)
 In the coming phases of the project, we will discuss any future plans, milestones, or upcoming features that are being considered. Feedback and contributions are welcomed as we move forward.
 
-## Responsible AI :lock_with_ink_pen:
+## Responsible AI :lock_with_ink_pen: (needs to be updated)
 This project strives to implement responsible AI practices, which include:
 
 Ensuring fairness and reducing bias in AI model training.
@@ -128,7 +128,7 @@ This project involves the development of a dynamic website for Freight Hero, aim
 * Services Overview: Detailed descriptions of the automation services offered by Freight Hero, including AI agent capabilities, cost-saving solutions, and enhanced operational reliability.
 * Case Studies and Testimonials: Success stories from existing clients that highlight the efficiency and cost reductions achieved through Freight Hero's AI-powered automation.
 
-### Installation Instructions: 
+### Installation Instructions:  (might be removed)
 
 1. Clone the repository from GitHub.
 2. Change directory to the project folder and install necessary dependencies via package manager.
@@ -136,10 +136,10 @@ This project involves the development of a dynamic website for Freight Hero, aim
 4. Use the specified command to start the development server and view the website locally.
 5. Start the development server using the appropriate command to view and test the website locally.
 
-## What's Next :round_pushpin:
+## What's Next :round_pushpin: (needs to be updated)
 In the coming phases of the project, we will discuss any future plans, milestones, or upcoming features that are being considered. Feedback and contributions are welcomed as we move forward.
 
-## Responsible AI :lock_with_ink_pen:
+## Responsible AI :lock_with_ink_pen: (needs to be updated)
 This project strives to implement responsible AI practices, which include:
 
 Ensuring fairness and reducing bias in AI model training.
