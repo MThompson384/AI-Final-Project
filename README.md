@@ -75,14 +75,15 @@ Bearing AI Research. (2023). Emissions, Shipping Costs, and the EU ETS: A Compre
 ## What's Next :round_pushpin: (needs to be updated)
 In the coming phases of the project, we will discuss any future plans, milestones, or upcoming features that are being considered. Feedback and contributions are welcomed as we move forward.
 
-## Responsible AI :lock_with_ink_pen: (needs to be updated)
-This project strives to implement responsible AI practices, which include:
+## Responsible AI :lock_with_ink_pen: 
+When deploying Artificial Intelligence (AI) solutions, such as Bearing AI's Decision Engine, for maritime emission management, it is crucial to address key ethical and practical considerations to ensure responsible and effective implementation.
 
-Ensuring fairness and reducing bias in AI model training.
-Maintaining transparency and accountability in the decision-making processes.
-Prioritizing user privacy and data security throughout the project lifecycle.
+:anchor: **Data Integrity and Bias Mitigation:** Ensure the quality and representativeness of training data to avoid skewed predictions. Implement strategies to identify and mitigate biases related to vessel types, operational conditions, or other factors.
 
-Reference Links
-GitHub Repository
-Project Documentation
-Research Paper or Article
+:anchor: **Data Privacy and Security:** Implement robust measures to protect sensitive vessel and operational data from unauthorized access and misuse. Adhere to relevant data privacy regulations and industry best practices.
+
+:anchor: **Environmental Impact Assessment:** Evaluate the environmental footprint of AI systems, including energy consumption and resource utilization. Strive for sustainable AI practices that minimize environmental impact.
+  
+:anchor: **Continuous Monitoring and Improvement:** Regularly monitor and evaluate AI model performance to identify and address potential issues. Update and retrain models with new data to maintain accuracy and adapt to evolving regulations.
+
+By proactively addressing these responsible AI considerations, we can ensure that AI technologies are deployed in a manner that promotes sustainability, ethical practices, and responsible business conduct within the maritime industry.
