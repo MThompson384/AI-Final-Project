@@ -63,6 +63,7 @@ The Ship Emission Calculator incorporates the following features:
 * Emission Calculation: The calculator estimates ship emissions based on user-provided inputs, including ship speed (knots), cargo weight (tons), and fuel type. This calculation provides a baseline understanding of the vessel's environmental footprint.
 * Emission Level Assessment: The system assesses the calculated emissions and categorizes them as low, average, or high, providing users with a clear understanding of their vessel's performance relative to industry benchmarks.
 * Emission Reduction Recommendations: If the system identifies high emissions, it offers emission reduction tips. These recommendations may include optimizing ship speed, adjusting cargo weight distribution, or exploring alternative fuel types.
+* Carbon Credit Estimation: Based on the calculated emissions, the system provides an estimate of the number of carbon credits the user may need to purchase to comply with regulations such as the EU ETS. This estimation helps users understand the potential financial implications of their vessel's emissions.
   
 This Ship Emission Calculator serves as a valuable tool for maritime stakeholders seeking to understand and mitigate their environmental impact. By providing accessible emission estimates and actionable recommendations, this tool empowers users to make informed decisions that promote sustainability and compliance with evolving environmental regulations.
 
