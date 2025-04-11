@@ -13,3 +13,8 @@ However, current models only accurately predict 80% of carbon emissions. **BEARI
 
 The financial implications are equally significant. For instance, a cargo vessel sailing within the EEA from 2025 and beyond that emits 15,000 tonnes of CO2 and faces a carbon price of €83 per tonne would have to bear an added cost of €1,245,000 annually. For a shipping company operating ten such vessels, this would amount to an additional expense of €12.5 million per year.
 If these vessels could reduce their emissions by a mere 10%, the company could save €1,245,000 annually. However, if companies under predict their annual carbon spend, the unforeseen costs can be significant.
+
+### How much a carbon credit costs- 65 euro per metric ton
+
+https://tradingeconomics.com/commodity/carbon
+
