@@ -19,11 +19,10 @@ Luke White
 * LinkedIn: https://www.linkedin.com/in/luke-white-7915701b6/
 * Github: https://github.com/lwhite01?tab=repositories
 
-## Company Scope :bookmark_tabs:
-This project focuses on the implementation of artificial intelligence (AI) within Bearing, a company dedicated to optimizing maritime shipping operations. The scope will encompass the following:
+## Company :office:
 
 ### Objective: 
-To explore how advanced deep learning techniques can be utilized to significantly reduce fuel consumption, enhance market opportunities, and improve overall fleet management for maritime shipping companies.
+This project focuses on the impact of artificial intelligence (AI), within Bearing, to assist companies with optimizing their Carbon Emissions. First, we will explore how advanced deep learning techniques are utilized to significantly reduce fuel consumption, enhance market opportunities, and improve overall fleet management for maritime shipping companies.
 
 ### Key Areas of Focus:
 
@@ -34,9 +33,12 @@ To explore how advanced deep learning techniques can be utilized to significantl
 
 ### Expected Outcomes: 
 
-Development of robust AI-driven tools that lead to decreased operational costs and increased profit margins for shipping companies.
-Realization of an enhanced decision-making framework that leverages data analytics to seize market opportunities promptly.
-Through the exploration of these aspects, this project aims to contribute valuable insights into the effective use of AI in the maritime industry, helping Bearing reaffirm its position as an innovator in shipping technology.
+:anchor: Development of robust AI-driven tools that lead to decreased operational costs and increased profit margins for shipping companies.
+
+:anchor: Realization of an enhanced decision-making framework that leverages data analytics to seize market opportunities promptly.
+
+:anchor: Through the exploration of these aspects, this project aims to contribute valuable insights into the effective use of AI in the maritime industry, helping Bearing reaffirm its position as an innovator   
+in shipping technology.
 
 ## Project Details :computer:
 ### Project Description: 
@@ -60,11 +62,11 @@ The Ship Emission Calculator incorporates the following features:
 
 * Emission Calculation: The calculator estimates ship emissions based on user-provided inputs, including ship speed (knots), cargo weight (tons), and fuel type. This calculation provides a baseline understanding of the vessel's environmental footprint.
 * Emission Level Assessment: The system assesses the calculated emissions and categorizes them as low, average, or high, providing users with a clear understanding of their vessel's performance relative to industry benchmarks.
-* Emission Reduction Recommendations: If the system identifies high emissions, it offers tailored emission reduction tips. These recommendations may include optimizing ship speed, adjusting cargo weight distribution, or exploring alternative fuel types.
+* Emission Reduction Recommendations: If the system identifies high emissions, it offers emission reduction tips. These recommendations may include optimizing ship speed, adjusting cargo weight distribution, or exploring alternative fuel types.
   
 This Ship Emission Calculator serves as a valuable tool for maritime stakeholders seeking to understand and mitigate their environmental impact. By providing accessible emission estimates and actionable recommendations, this tool empowers users to make informed decisions that promote sustainability and compliance with evolving environmental regulations.
 
-### Case Article: :blue_book:
+### Case Article: :bookmark_tabs:
 
 Bearing AI Research. (2023). Emissions, Shipping Costs, and the EU ETS: A Comprehensive Guide for the Maritime Sector.
 * https://github.com/MThompson384/AI-Final-Project/blob/main/article/bearingAI_report_carbon_tracker.pdf
