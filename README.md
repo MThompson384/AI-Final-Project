@@ -19,7 +19,7 @@ Luke White
 * LinkedIn: https://www.linkedin.com/in/luke-white-7915701b6/
 * Github: https://github.com/lwhite01?tab=repositories
 
-## Project Scope :bookmark_tabs:
+## Company Scope :bookmark_tabs:
 This project focuses on the implementation of artificial intelligence (AI) within Bearing, a company dedicated to optimizing maritime shipping operations. The scope will encompass the following:
 
 ### Objective: 
@@ -40,22 +40,33 @@ Through the exploration of these aspects, this project aims to contribute valuab
 
 ## Project Details :computer:
 ### Project Description: 
-This project involves developing a comprehensive website for Bearing.ai, aimed at enhancing customer engagement and providing valuable insights into the maritime supply chain. The website will serve as a hub for information about Bearing’s innovative AI solutions and their impact on optimizing shipping operations.
+This project examines the impact of the European Union Emissions Trading System (EU ETS) on the maritime shipping industry and highlights the role of Bearing AI in assisting companies with compliance and strategic decision-making. The EU ETS, a regulatory framework established by the European Union, aims to reduce greenhouse gas emissions from various industries, including maritime shipping. As the EU ETS extends its scope to the maritime sector, shipping companies face operational and financial challenges, including the need to purchase carbon credits to offset emissions.
+
+Bearing AI offers innovative technology solutions to help maritime vessel owners and operators navigate the complexities of the EU ETS. Their AI-powered Decision Engine enables users to accurately predict carbon emissions, forecast carbon credit costs, and optimize operational efficiency. By leveraging Bearing AI's predictive capabilities, shipping companies can make informed decisions that balance environmental responsibility, financial management, and operational efficiency.
+
+This project will explore how Bearing AI's solutions can assist shipping companies in:
+
+* Accurately predicting carbon emissions with up to 98% accuracy, compared to 80% with leading physics-based models.
+* Forecasting carbon credit costs and allocation more precisely.
+* Remaining competitive with lower operational costs.
+* Maintaining environmental compliance under the EU ETS.
+* By adopting Bearing AI's technology, shipping companies can reduce overall operation costs, improve profit margins, and gain a competitive edge in the market. This project aims to demonstrate the value of Bearing AI's contributions to the maritime industry's transition towards a more sustainable and environmentally responsible future.
 
 ### Key Features:
 
-* Homepage: An inviting main page that conveys Bearing’s mission, vision, and the benefits of AI in maritime operations.
-* Demo Section: A user-friendly interactive demo that assists potential customers in exploring various marine supply chain options. This will allow users to simulate decision-making processes and visualize the benefits of utilizing Bearing’s AI technologies.
-* Solutions Overview: Detailed descriptions of the solutions provided by Bearing, including fuel efficiency strategies, market analysis tools, and fleet management insights.
-* Case Studies: Real-world examples showcasing successful implementations of Bearing’s technology, emphasizing partnerships with leading shipping companies.
+Following our analysis of the Bearing AI Research case, our team has developed a website demo featuring a Ship Emission Calculator designed to provide users with insights into their vessel's environmental impact. This tool leverages key operational factors to estimate emissions and offer actionable recommendations for reduction.
 
-### Installation Instructions: (might be removed)
+The Ship Emission Calculator incorporates the following features:
 
-1. Clone the repository from GitHub.
-2. Navigate to the project directory and run the command to install dependencies.
-3. Set up the database and configure environment variables.
-4. Use the specified command to start the development server and view the website locally.
-5. Usage: Users can navigate through the website to access information on services, request demos, and contact Bearing for further inquiries. The demo feature will allow users to interactively learn about supply chain optimization options based on their unique needs.
+* Emission Calculation: The calculator estimates ship emissions based on user-provided inputs, including ship speed (knots), cargo weight (tons), and fuel type. This calculation provides a baseline understanding of the vessel's environmental footprint.
+* Emission Level Assessment: The system assesses the calculated emissions and categorizes them as low, average, or high, providing users with a clear understanding of their vessel's performance relative to industry benchmarks.
+* Emission Reduction Recommendations: If the system identifies high emissions, it offers tailored emission reduction tips. These recommendations may include optimizing ship speed, adjusting cargo weight distribution, or exploring alternative fuel types.
+  
+This Ship Emission Calculator serves as a valuable tool for maritime stakeholders seeking to understand and mitigate their environmental impact. By providing accessible emission estimates and actionable recommendations, this tool empowers users to make informed decisions that promote sustainability and compliance with evolving environmental regulations.
+
+### Case Article: :blue_book:
+
+['Bearing AI Research. (2023). Emissions, Shipping Costs, and the EU ETS: A Comprehensive Guide for the Maritime Sector.',https://github.com/MThompson384/AI-Final-Project/blob/main/article/bearingAI_report_carbon_tracker.pdf]
 
 ## What's Next :round_pushpin: (needs to be updated)
 In the coming phases of the project, we will discuss any future plans, milestones, or upcoming features that are being considered. Feedback and contributions are welcomed as we move forward.
