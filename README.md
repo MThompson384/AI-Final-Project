@@ -66,7 +66,8 @@ This Ship Emission Calculator serves as a valuable tool for maritime stakeholder
 
 ### Case Article: :blue_book:
 
-['Bearing AI Research. (2023). Emissions, Shipping Costs, and the EU ETS: A Comprehensive Guide for the Maritime Sector.',https://github.com/MThompson384/AI-Final-Project/blob/main/article/bearingAI_report_carbon_tracker.pdf]
+Bearing AI Research. (2023). Emissions, Shipping Costs, and the EU ETS: A Comprehensive Guide for the Maritime Sector.
+* [https://github.com/MThompson384/AI-Final-Project/blob/main/article/bearingAI_report_carbon_tracker.pdf]
 
 ## What's Next :round_pushpin: (needs to be updated)
 In the coming phases of the project, we will discuss any future plans, milestones, or upcoming features that are being considered. Feedback and contributions are welcomed as we move forward.
