@@ -41,7 +41,7 @@ This project focuses on the impact of artificial intelligence (AI), within Beari
 in shipping technology.
 
 ## Project Details :computer:
-### Project Description: 
+### Case Artical Description: 
 This project examines the impact of the European Union Emissions Trading System (EU ETS) on the maritime shipping industry and highlights the role of Bearing AI in assisting companies with compliance and strategic decision-making. The EU ETS, a regulatory framework established by the European Union, aims to reduce greenhouse gas emissions from various industries, including maritime shipping. As the EU ETS extends its scope to the maritime sector, shipping companies face operational and financial challenges, including the need to purchase carbon credits to offset emissions.
 
 Bearing AI offers innovative technology solutions to help maritime vessel owners and operators navigate the complexities of the EU ETS. Their AI-powered Decision Engine enables users to accurately predict carbon emissions, forecast carbon credit costs, and optimize operational efficiency. By leveraging Bearing AI's predictive capabilities, shipping companies can make informed decisions that balance environmental responsibility, financial management, and operational efficiency.
@@ -54,7 +54,7 @@ This project will explore how Bearing AI's solutions can assist shipping compani
 * Maintaining environmental compliance under the EU ETS.
 * By adopting Bearing AI's technology, shipping companies can reduce overall operation costs, improve profit margins, and gain a competitive edge in the market. This project aims to demonstrate the value of Bearing AI's contributions to the maritime industry's transition towards a more sustainable and environmentally responsible future.
 
-### Key Features:
+### Project Description & Features:
 
 Following our analysis of the Bearing AI Research case, our team has developed a website demo featuring a Ship Emission Calculator designed to provide users with insights into their vessel's environmental impact. This tool leverages key operational factors to estimate emissions and offer actionable recommendations for reduction.
 
