@@ -72,8 +72,10 @@ This Ship Emission Calculator serves as a valuable tool for maritime stakeholder
 Bearing AI Research. (2023). Emissions, Shipping Costs, and the EU ETS: A Comprehensive Guide for the Maritime Sector.
 * https://github.com/MThompson384/AI-Final-Project/blob/main/article/bearingAI_report_carbon_tracker.pdf
 
-## What's Next :round_pushpin: (needs to be updated)
-In the coming phases of the project, we will discuss any future plans, milestones, or upcoming features that are being considered. Feedback and contributions are welcomed as we move forward.
+## What's Next :round_pushpin: 
+To enhance communication and organization throughout our project, we have established a Kanban board. This board will be used to document completed goals, ongoing tasks, and upcoming objectives, ensuring clarity and accountability among team members.
+
+* [https://github.com/MThompson384/AI-Final-Project/blob/main/article/bearingAI_report_carbon_tracker.pdf](https://github.com/users/MThompson384/projects/2/views/1)
 
 ## Responsible AI :lock_with_ink_pen: 
 When deploying Artificial Intelligence (AI) solutions, such as Bearing AI's Decision Engine, for maritime emission management, it is crucial to address key ethical and practical considerations to ensure responsible and effective implementation.
