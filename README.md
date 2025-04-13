@@ -1,5 +1,4 @@
-# AI-Final-Project
-
+# Bearing.ai
 <img src="https://github.com/user-attachments/assets/0259affb-21f9-4c2f-bc7b-d2e8411c6c57" width="100%" height="auto">
 
 ## Author List :black_nib:
