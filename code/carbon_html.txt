@@ -104,6 +104,12 @@
       color: #2c3e50;
       margin: 15px 0;
     }
+    .cost-value {
+      font-size: 24px;
+      font-weight: bold;
+      color: #e74c3c;
+      margin: 15px 0;
+    }
     .footnote {
       font-size: 12px;
       color: #7f8c8d;
@@ -116,10 +122,17 @@
       padding: 15px;
       border-radius: 5px;
       border-left: 5px solid #27ae60;
+      display: none;
     }
     .tips h3 {
       color: #27ae60;
       margin-top: 0;
+    }
+    .model-info {
+      margin-top: 15px;
+      font-size: 14px;
+      font-style: italic;
+      color: #7f8c8d;
     }
   </style>
 </head>
@@ -140,7 +153,12 @@
     
     <div class="form-group">
       <label for="weight">Cargo Weight (tons):</label>
-      <input type="number" id="weight" min="1000" max="50000" step="100" value="12000" required>
+      <input type="number" id="weight" min="1000" max="50000" step="100" value="10000" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="distance">Voyage Distance (nautical miles):</label>
+      <input type="number" id="distance" min="100" max="30000" step="10" value="5000" required>
     </div>
     
     <div class="form-group">
@@ -161,10 +179,14 @@
     <div class="result" id="result">
       <h2>Estimated Carbon Emissions</h2>
       <div class="result-value"><span id="emission-value">0</span> metric tons of CO₂</div>
+      <div class="cost-value">Carbon Cost: <span id="cost-value">0</span> €</div>
       <div id="comparison"></div>
+      <div class="model-info">
+        Calculated using a neural network trained on 1,000 voyage samples
+      </div>
     </div>
     
-    <div class="tips">
+    <div class="tips" id="tips">
       <h3>Carbon Reduction Tips</h3>
       <ul>
         <li>Reducing speed by 10% can lower emissions by up to 30%</li>
@@ -174,7 +196,7 @@
       </ul>
     </div>
     
-    <p class="footnote">This calculator uses an AI model trained on shipping data to estimate carbon emissions. Results are approximate and may vary based on specific vessel characteristics, weather conditions, and other factors.</p>
+    <p class="footnote">This calculator uses a neural network model trained on shipping data to estimate carbon emissions. Results are approximate and may vary based on specific vessel characteristics, weather conditions, and other factors.</p>
   </div>
 
   <script>
@@ -182,30 +204,42 @@
       // Get input values
       const speed = parseFloat(document.getElementById('speed').value);
       const weight = parseFloat(document.getElementById('weight').value);
+      const distance = parseFloat(document.getElementById('distance').value);
       const fuelType = parseInt(document.getElementById('fuel').value);
       
       // Input validation
-      if (isNaN(speed) || isNaN(weight)) {
-        alert('Please enter valid numbers for speed and cargo weight.');
+      if (isNaN(speed) || isNaN(weight) || isNaN(distance)) {
+        alert('Please enter valid numbers for speed, cargo weight, and distance.');
         return;
       }
 
       // Show loading spinner
       document.getElementById('loading').style.display = 'block';
       document.getElementById('result').style.display = 'none';
+      document.getElementById('tips').style.display = 'none'; // Hide tips when recalculating
       
       // Call the server-side function
       google.script.run
-        .withSuccessHandler(function(emission) {
+        .withSuccessHandler(function(result) {
           // Hide loading spinner
           document.getElementById('loading').style.display = 'none';
           
-          // Display result
-          document.getElementById('emission-value').textContent = emission.toFixed(2);
+          // Display results
+          document.getElementById('emission-value').textContent = result.emission.toFixed(2);
+          document.getElementById('cost-value').textContent = result.cost.toFixed(2);
           
-          // Show comparison
-          const comparisonText = getComparisonText(emission);
+          // Show comparison and tips only if emissions are above average
+          // Threshold adjusted to match the new model's output scale
+          const isAboveAverage = result.emission >= 200;
+          const comparisonText = getComparisonText(result.emission);
           document.getElementById('comparison').innerHTML = comparisonText;
+          
+          // Only show tips if emissions are above average
+          if (isAboveAverage) {
+            document.getElementById('tips').style.display = 'block';
+          } else {
+            document.getElementById('tips').style.display = 'none';
+          }
           
           // Show result div
           document.getElementById('result').style.display = 'block';
@@ -215,14 +249,14 @@
           document.getElementById('loading').style.display = 'none';
           alert('Error calculating emissions: ' + error);
         })
-        .calculateEmissions(speed, weight, fuelType);
+        .calculateEmissions(speed, weight, fuelType, distance);
     });
     
     function getComparisonText(emission) {
-      // Provide context for the emission value
-      if (emission < 15) {
+      // Provide context for the emission value - adjusted thresholds for the new model
+      if (emission < 150) {
         return "<p>Your estimated emissions are <strong>low</strong> compared to industry average.</p>";
-      } else if (emission < 25) {
+      } else if (emission < 200) {
         return "<p>Your estimated emissions are <strong>average</strong> for the shipping industry.</p>";
       } else {
         return "<p>Your estimated emissions are <strong>above average</strong>. Consider implementing some carbon reduction strategies.</p>";
