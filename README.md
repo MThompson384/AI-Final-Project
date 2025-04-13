@@ -67,6 +67,13 @@ The Ship Emission Calculator incorporates the following features:
   
 This Ship Emission Calculator serves as a valuable tool for maritime stakeholders seeking to understand and mitigate their environmental impact. By providing accessible emission estimates and actionable recommendations, this tool empowers users to make informed decisions that promote sustainability and compliance with evolving environmental regulations.
 
+:anchor: [Sea Emissions Calculator](https://script.google.com/macros/s/AKfycbz15UBrXwnstmrnv8Qvgf7Jz1jsqCjCTMvQhUv_FzujDWAlHzDlSGisWTFH2gTfG6uh-w/exec)
+
+:anchor: [Python Code](https://github.com/MThompson384/AI-Final-Project/blob/main/code/carbon_prediction.ipynb)
+
+:anchor: [Back-end Website Code](https://github.com/MThompson384/AI-Final-Project/blob/main/code/carbon_gs.txt)
+
+:anchor: [Front-end Website Code](https://github.com/MThompson384/AI-Final-Project/blob/main/code/carbon_html.txt)
 ### Case Article: :bookmark_tabs:
 
 Bearing AI Research. (2023). Emissions, Shipping Costs, and the EU ETS: A Comprehensive Guide for the Maritime Sector.
